@@ -14,6 +14,11 @@ body {
             margin-bottom: 10px; 
         }
 
+        button {
+            font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
+
+        }
+
         body,
         p,
         div {
