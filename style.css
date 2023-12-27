@@ -33,15 +33,6 @@ body {
             margin: 10px 0;
         }
 
-        img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 10px; 
-        }
-
         nav {
             display: flex;
             flex-direction: column;
