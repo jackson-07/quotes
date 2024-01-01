@@ -5,6 +5,10 @@ body {
             background-size: cover;
             margin: 0;
             font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         h1 {
@@ -16,7 +20,12 @@ body {
 
         button {
             font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
+            border-radius: 5px;
+        }
 
+        button:hover {
+            background-color: blueviolet;
+            color: white;
         }
 
         body,
