@@ -11,13 +11,6 @@ body {
             justify-content: center;
         }
 
-        h1 {
-            text-align: center;
-            font-size: 40px;
-            width: 100%;
-            margin-bottom: 10px; 
-        }
-
         button {
             font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
             border-radius: 5px;
