@@ -31,21 +31,3 @@ body {
             width: 100%;
             margin-bottom: 10px; 
         }
-
-        p {
-            margin: 10px 0;
-        }
-
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        nav p {
-            margin: 5px 0;
-        }
-
-        footer {
-            display: none;
-        }
