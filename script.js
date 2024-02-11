@@ -8,7 +8,11 @@ async function getQuote() {
         };
     } catch (error) {
         console.error('Error fetching quote:', error);
-        alert('Error fetching quote: ' + error.message);
+        let errorMessage = error.message;
+        if (error instanceof TypeError && error.message === "Failed to fetch") {
+            errorMessage = "Error 404";
+        }
+        alert(errorMessage);
         return {
             content: 'An error occurred',
         };
@@ -18,7 +22,9 @@ async function getQuote() {
 async function updateQuote() {
     const quoteContainer = document.getElementById('quoteContainer');
     const { content, author } = await getQuote();
-    quoteContainer.innerHTML = `<blockquote>"${content}"</blockquote><p>- ${author}</p>`;
+    if (content !== 'An error occurred') {
+        quoteContainer.innerHTML = `<blockquote>"${content}"</blockquote><p>- ${author}</p>`;
+    }
 }
 
 const getQuoteBtn = document.getElementById('getQuoteBtn');
