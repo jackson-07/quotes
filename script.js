@@ -8,6 +8,7 @@ async function getQuote() {
         };
     } catch (error) {
         console.error('Error fetching quote:', error);
+        alert('Error fetching quote: ' + error.message);
         return {
             content: 'An error occurred',
         };
