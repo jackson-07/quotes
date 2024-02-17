@@ -11,15 +11,15 @@ body {
             justify-content: center;
         }
 
+        #quote-text {
+            font-weight: 700;
+
+        }
+
         button {
             font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
             border-radius: 5px;
             cursor: pointer;
-        }
-
-        button:hover {
-            background-color: blueviolet;
-            color: white;
         }
 
         body,
